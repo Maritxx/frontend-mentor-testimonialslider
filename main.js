@@ -45,6 +45,7 @@ function changeSlide(n) {
 
 
 function showSlides(n) {
+	let i;
 	let slides = $("div.testimonial-slide__container");
 
 	if (n > slides.length) {
@@ -55,6 +56,10 @@ function showSlides(n) {
 	if (n < 1 ) {
 		slideNumber = slides.length
 	};
+
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
 
 	slides[slideNumber - 1].style.display = "block";
 	//Arrays start counting at 0. Removes one from the slideNumber to ensure it won't give an undefined error.
