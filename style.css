@@ -66,11 +66,11 @@ p {
 }
 @media all and (min-width: 782px) {
   .testimonial-slide__image {
-    position: relative;
+    position: absolute;
     right: 0;
-    top: -23vh;
+    top: 0;
+    margin-top: -10%;
     max-width: 55%;
-    padding: 40px 0px;
   }
 }
 .testimonial-slide__image img {
