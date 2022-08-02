@@ -15,7 +15,7 @@ p {
 }
 @media all and (min-width: 782px) {
   p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -81,14 +81,14 @@ p {
 
 .testimonials__navigation {
   position: absolute;
-  right: 300px;
+  right: 0;
   width: 90px;
   display: flex;
   justify-content: space-between;
   padding: 10px;
   background-color: white;
   border-radius: 30px;
-  bottom: -20px;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
