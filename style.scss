@@ -12,10 +12,11 @@ body {
 
 
 /*Font Styles*/
-q {
+p {
 	font-size: 1.25rem;
 	font-weight: 300;
 	color: var(--text-primary);
+	line-height: 1.5;
 
 	@media all and (min-width: 782px) {
 		font-size: 2rem;
@@ -51,10 +52,54 @@ q {
 .testimonials__holder {
 	position: relative;
 	max-width: 1200px;
+	padding: 100px 40px;
 	margin: auto;
 }
 
 
 .testimonial-slide-content__holder {
+	display: flex;
+
+	@media all and (max-width: 781px) {
+		flex-direction: column-reverse;
+	}
 	
+	@media all and (min-width: 782px) {
+		align-items: center;
+	}
+}
+
+
+.testimonial-slide__text {
+	@media all and (max-width: 782px) {
+		flex: 0 1 50%;
+	}
+}
+
+
+.testimonial-slide__image {
+	z-index: -1;
+
+	@media all and (max-width: 782px) {
+		flex: 0 1 50%;
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+
+.testimonials__navigation {
+	position: absolute;
+	right: 300px;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    bottom: -20px;
 }
