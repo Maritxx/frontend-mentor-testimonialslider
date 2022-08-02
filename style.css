@@ -1,1 +1,52 @@
+/*Global Styles*/
+body {
+  background-image: url("img/pattern-curve.svg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  font-family: var(--main-font);
+}
 
+/*Font Styles*/
+q {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--text-primary);
+}
+@media all and (min-width: 782px) {
+  q {
+    font-size: 2rem;
+  }
+}
+
+.c-author {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+@media all and (min-width: 782px) {
+  .c-author {
+    font-size: 1.4rem;
+  }
+}
+
+.c-job {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+@media all and (min-width: 782px) {
+  .c-job {
+    font-size: 1.4rem;
+  }
+}
+
+/*Testimonial Slider*/
+.testimonials__holder {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.testimonial-slide__container {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

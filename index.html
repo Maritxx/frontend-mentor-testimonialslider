@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 
-		<link rel="icon" type="image/png" sizes="32x32" href="img/">
-    <!--Google fonts go here-->
+	<link rel="icon" type="image/png" sizes="32x32" href="img/">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" type="text/css" href="reset.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <title>Basic Template</title>
-	</head>
-  
-  <body>
-    <header>
-      
-    </header>
-    
-    <main>
-      
-    </main>
-    
-    <footer>
-      
-      <script src="main.js"></script>
-    </footer>
-  </body>
+	<title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+</head>
+
+<body>
+	<header>
+	</header>
+	
+	<main>
+		<section class="testimonial-slider">
+			<div class="testimonials__holder">
+				<div class="testimonial-slide__container">
+					<div class="testimonial-slide__text">
+						<q>I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. 
+						I’m now in the job of my dreams and so excited about the future.</q>
+						<span class="c-author">Tanya Sinclair</span>
+						<span class="c-job">UX Engineer</span>
+					</div>
+					<div class="testimonial-slide__image">
+						<img src="img/image-tanya.jpg" alt="Tanya Sinclair">
+					</div>
+				</div>
+
+				<div class="testimonial-slide__container">
+					<div class="testimonial-slide__text">
+						<q>If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.</q>
+						<span class="c-author">John Tarkpor</span>
+						<span class="c-job">Junior Front-end Developer</span>
+					</div>
+					<div class="testimonial-slide__image">
+						<img src="img/image-john.jpg" alt="John Tarkpor">
+					</div>
+				</div>
+
+				<div class="testimonials__navigation">
+					<button id="buttonPrevious"><img src="img/icon-prev.svg" alt="Previous slide"></button>
+					<button id="buttonNext"><img src="img/icon-next.svg" alt="Next slide"></button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<script src="main.js"></script>
+	</footer>
+</body>
 </html>

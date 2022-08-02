@@ -26,3 +26,36 @@ $(window).on("load resize orientationchange", function () {
 //The .on action attaches one or more event handlers to the selected element.
 //The function within the .on action specifies that it needs a function to run.
 //Runs the pageHeight function when the page gets loaded, resized or if the orientation (portrait or landscape) is changed. 
+
+
+
+let slideNumber = 1;
+showSlides(slideNumber);
+
+
+$("#buttonPrevious").click(changeSlide(-1));
+$("#buttonNext").click(changeSlide(1));
+
+function changeSlide(n) {
+	showSlides(slideNumber +=n);
+};
+//n stands for a constant that you don't know the value of yet. It is changing within the function.
+//+= is a mathematical operation. It takes the value of the variable (n), adds or subtracts the new number to it and then 'saves' that as the new value of the variable.
+//Makes the 'showSlides' function run upon button click.
+
+
+function showSlides(n) {
+	let slides = $("div.testimonial-slide__container");
+
+	if (n > slides.length) {
+		slideNumber = 1
+	};
+	//Sets the slider back to the first quote if the slide-number is higher than the number of actual slides.
+
+	if (n < 1 ) {
+		slideNumber = slides.length
+	};
+
+	slides[slideNumber - 1].style.display = "block";
+	//Arrays start counting at 0. Removes one from the slideNumber to ensure it won't give an undefined error.
+};
