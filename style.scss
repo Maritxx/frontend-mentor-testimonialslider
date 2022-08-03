@@ -18,7 +18,7 @@ p {
 	color: var(--text-primary);
 	line-height: 1.5;
 
-	@media all and (min-width: 782px) {
+	@media all and (min-width: 1060px) {
 		font-size: 2rem;
 	}
 }
@@ -28,7 +28,7 @@ p {
 	font-weight: 700;
 	color: var(--text-primary);
 
-	@media all and (min-width: 782px) {
+	@media all and (min-width: 1060px) {
 		font-size: 1.4rem;
 	}
 }
@@ -38,7 +38,7 @@ p {
 	font-weight: 500;
 	color: var(--text-secondary);
 
-	@media all and (min-width: 782px) {
+	@media all and (min-width: 1060px) {
 		font-size: 1.4rem;
 	}
 }
@@ -67,8 +67,17 @@ p {
 
 
 .testimonial-slide__text {
-	@media all and (min-width: 782px) {
+	position: relative;
+
+	@media all and (min-width: 1060px) {
 		max-width: 55%;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		background-image: url("img/pattern-quotes.svg");
+		background-repeat: no-repeat;
 	}
 }
 
@@ -76,7 +85,7 @@ p {
 .testimonial-slide__image {
 	z-index: -1;
 
-	@media all and (min-width: 782px) {
+	@media all and (min-width: 1060px) {
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -88,6 +97,13 @@ p {
 		display: block;
 		max-width: 100%;
 		margin: 0 auto;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		background-image: url("img/pattern-bg.svg");
+		background-repeat: no-repeat;
 	}
 }
 
@@ -102,4 +118,9 @@ p {
     background-color: white;
     border-radius: 30px;
     bottom: 0;
+
+    @media all and (min-width: 1060px) {
+    	margin-right: 300px;
+    	margin-bottom: calc(10vh + 40px);
+    }
 }
