@@ -51,13 +51,13 @@ p {
 /*Testimonial Slider*/
 .testimonials__holder {
 	position: relative;
-    max-width: 1200px;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    min-height: 100vh;
+	max-width: 1200px;
+	padding: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	min-height: 100vh;
 }
 
 
@@ -78,6 +78,18 @@ p {
 		position: absolute;
 		background-image: url("img/pattern-quotes.svg");
 		background-repeat: no-repeat;
+		background-size: contain;
+		width: 80px;
+		height: 60px;
+		top: -30px;
+		left: calc(50% - 40px);
+
+		@media all and (min-width: 1060px) {
+			width: 100px;
+			height: 80px;
+			top: -45px;
+			left: 75px;
+		}
 	}
 }
 
@@ -104,6 +116,16 @@ p {
 		position: absolute;
 		background-image: url("img/pattern-bg.svg");
 		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: -1;
+
+		@media all and (min-width: 1060px) {
+			content: "";
+			width: calc(115% + 80px);
+			height: 115%;
+			left: -40px;
+			top: -40px;
+		}
 	}
 }
 
@@ -111,16 +133,16 @@ p {
 .testimonials__navigation {
 	position: absolute;
 	right: 0;
-    width: 90px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: white;
-    border-radius: 30px;
-    bottom: 0;
+	width: 90px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: white;
+	border-radius: 30px;
+	bottom: 0;
 
-    @media all and (min-width: 1060px) {
-    	margin-right: 300px;
-    	margin-bottom: calc(10vh + 40px);
-    }
+	@media all and (min-width: 1060px) {
+		margin-right: 300px;
+		margin-bottom: calc(10vh + 40px);
+	}
 }
